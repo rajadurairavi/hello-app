@@ -6,7 +6,7 @@ app = FastAPI()
 
 @app.get("/")
 def hello():
-    return {"message": "Hello Raja, from Cloud Run!"}
+    return {"message": "Deployed automatically from GitHub!"}
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8080))
